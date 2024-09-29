@@ -26,7 +26,7 @@ const FaqItem = ({ faq }: { faq: FaqItemProps }) => {
         </span>
       </button>
       {show && (
-        <p className="pl-6 pr-2 text-sm">{faq.answer ? faq.answer : ""}</p>
+        <p className="w-2xl lg:w-3xl pl-6 pr-2 text-sm">{faq.answer ? faq.answer : ""}</p>
       )}
     </div>
   );

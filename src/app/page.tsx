@@ -2,6 +2,8 @@ import Logo from "@/components/Logo/Logo";
 import Faq from "@/sections/Faq";
 import Stage from "@/sections/Stagge";
 import HowtoBuy from "@/sections/HowtoBuy";
+import DesktopPurchaseGuide from "@/components/PurchageGuide/DesktopPurchaseGuide";
+import MobilePurchaseGuide from "@/components/PurchageGuide/MobilePurchaseGuide";
 import Members from "@/sections/Members";
 import Footer from "@/sections/Footer";
 import Image from "next/image";
@@ -178,8 +180,11 @@ export default function Home() {
           height={658}
         />
       </div>
-      <div className="flex justify-center">
-        <HowtoBuy />
+      <div className="hidden lg:block">
+        <DesktopPurchaseGuide />
+      </div>
+      <div className="block lg:hidden">
+        <MobilePurchaseGuide />
       </div>
       <div className="flex justify-center">
         <Members />
